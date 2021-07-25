@@ -1,0 +1,71 @@
+//============ HEADER ==================
+.page-header {
+  background-color: var(--bg-color-header);
+  border-bottom: 1px solid #ececec;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  /* position: fixed;
+  width: 100%; */
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__address {
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/* header address  */
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item :nth-child(1) {
+    margin-right: 10px;
+  }
+
+  &__item:nth-child(1) {
+    margin-right: 30px;
+  }
+
+  &__link:visited,
+  &__link {
+    color: var(--secondary-text-color);
+    transition: color var(--var-animation-duration) var(--var-animation-cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: var(--secondary-text-color);
+    transition: fill var(--var-animation-duration) var(--var-animation-cubic);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

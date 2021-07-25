@@ -1,0 +1,80 @@
+.section-team {
+  background-color: var(--bg-color-secondary);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - var(--card-item-gap));
+
+  box-shadow: var(--box-shadow-var);
+
+  /* border-radius: 0px 0px 4px 4px; */
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  padding-bottom: 30px;
+}
+
+.team-item .card-text {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.team .text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.card-item .social-link {
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: aqua; */
+
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.card-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: var(--bg-color-social-icon);
+
+  transition: fill var(--var-animation-duration) var(--var-animation-cubic),
+    background-color var(--var-animation-duration) var(--var-animation-cubic);
+}
+
+.card-item .link:hover,
+.card-item .link:focus {
+  fill: var(--bg-color-primary);
+  background-color: var(--accent-color);
+}

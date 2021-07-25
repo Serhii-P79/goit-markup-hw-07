@@ -1,0 +1,36 @@
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  transition: color var(--var-animation-duration) var(--var-animation-cubic);
+
+  &__fisrt-word {
+    color: var(--accent-color);
+    transition: color var(--var-animation-duration) var(--var-animation-cubic);
+  }
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.page-header__logo {
+  color: var(--logo-color-header);
+  margin-right: 92px;
+
+  &:hover .logo__fisrt-word {
+    color: var(--logo-color-header);
+  }
+}
+
+.page-footer__logo {
+  color: var(--primary-color-footer);
+  margin-bottom: 20px;
+
+  &:hover .logo__fisrt-word {
+    color: var(--primary-color-footer);
+  }
+}
